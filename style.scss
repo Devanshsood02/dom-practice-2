@@ -9,3 +9,91 @@ body {
   height: 100%;
   width: 100%;
 }
+
+@mixin flexx($justify-content:center,$align-items:center){
+ display:flex;
+    justify-content:$justify-content;
+    align-items:$align-items;
+}
+
+
+@mixin insidediv(){
+display:flex;
+flex-direction: column;
+align-items: center;
+
+align-items:center;
+}
+
+
+main{
+  background-color: black;
+height: 100%;
+width: 100%;
+ @include flexx;
+
+ section.wraper{
+display: flex;
+flex-direction: column;
+ background-color: #E0C533;
+
+
+h5{
+  display: flex;
+  justify-content: center;
+align-items: center;
+
+}
+
+  section.view1{
+   
+    @include flexx;
+    justify-content: space-around;
+    
+ width: 400px;
+ height: 250px;
+
+
+
+
+ .left{
+  @include insidediv;
+  height: 150px;
+  width: 120px;
+  background-color:#FF8B71 ;
+  justify-content: space-evenly;
+
+  img{
+    height: 50px;
+    width:50px;
+  }
+ }
+
+ .right{
+   @include insidediv;
+    justify-content: space-evenly;
+  height: 150px;
+  width: 120px;
+  background-color:#87E089;
+ 
+
+    img{
+    height: 50px;
+    width:50px;
+  }
+ }
+
+
+
+
+  }
+}
+
+
+button{
+display: flex;
+flex-direction: column;
+  color: white;
+  background-color: red;
+}
+}

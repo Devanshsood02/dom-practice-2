@@ -8,4 +8,65 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+main {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.wraper {
+  display: flex;
+  flex-direction: column;
+  background-color: #E0C533;
+}
+main section.wraper h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.wraper section.view1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 250px;
+}
+main section.wraper section.view1 .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  height: 150px;
+  width: 120px;
+  background-color: #FF8B71;
+  justify-content: space-evenly;
+}
+main section.wraper section.view1 .left img {
+  height: 50px;
+  width: 50px;
+}
+main section.wraper section.view1 .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 150px;
+  width: 120px;
+  background-color: #87E089;
+}
+main section.wraper section.view1 .right img {
+  height: 50px;
+  width: 50px;
+}
+main button {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

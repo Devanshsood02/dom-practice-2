@@ -10,90 +10,126 @@ body {
   width: 100%;
 }
 
-@mixin flexx($justify-content:center,$align-items:center){
- display:flex;
-    justify-content:$justify-content;
-    align-items:$align-items;
-}
-
-
-@mixin insidediv(){
-display:flex;
-flex-direction: column;
-align-items: center;
-
-align-items:center;
-}
-
-
-main{
-  background-color: black;
-height: 100%;
-width: 100%;
- @include flexx;
-
- section.wraper{
-display: flex;
-flex-direction: column;
- background-color: #E0C533;
-
-
-h5{
+@mixin flexx($justify-content: center, $align-items: center) {
   display: flex;
-  justify-content: center;
-align-items: center;
-
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
-  section.view1{
+
+@mixin insidediv() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  align-items: center;
+}
+
+
+main {
+
+
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  @include flexx;
+  flex-direction: column;
+
+
+
+  h1{
+    color: white;
+    font-size:45px;
+  }
+
+
+
+
+  section.wraper {
+    display: flex;
+    flex-direction: column;
+    background-color: #E0C533;
+    margin:50px;
+    height: 300px;
+
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    section.view1 {
+
+      span{
+        font-size: 15px;
+        font-weight: 550;
+        color:white;
+      }
+
+      @include flexx;
+      justify-content: space-around;
+
+      width: 400px;
+      height: 250px;
+
+
+
+
+      .left {
+        @include insidediv;
+        height: 180px;
+        width: 165px;
+        background-color: #FF8B71;
+        justify-content: space-evenly;
+
+        img {
+          height: 80px;
+          width: 80px;
+          
+        }
+      }
+
+      .right {
+        @include insidediv;
+        justify-content: space-evenly;
+        height: 180px;
+        width: 165px;
+        background-color: #87E089;
+
+
+        img {
+          height: 80px;
+          width: 80px;
+          
+        }
+      }
+
+
+
+
+    }
+  }
+
+
+  button {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color:white;
+    padding: 10px 35px;
+    border:3px solid red;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
    
-    @include flexx;
-    justify-content: space-around;
-    
- width: 400px;
- height: 250px;
-
-
-
-
- .left{
-  @include insidediv;
-  height: 150px;
-  width: 120px;
-  background-color:#FF8B71 ;
-  justify-content: space-evenly;
-
-  img{
-    height: 50px;
-    width:50px;
   }
- }
 
- .right{
-   @include insidediv;
-    justify-content: space-evenly;
-  height: 150px;
-  width: 120px;
-  background-color:#87E089;
- 
 
-    img{
-    height: 50px;
-    width:50px;
+  button:hover{
+     scale:1.1;
+     color:white;
+     background-color: red;
   }
- }
-
-
-
-
-  }
-}
-
-
-button{
-display: flex;
-flex-direction: column;
-  color: white;
-  background-color: red;
-}
 }

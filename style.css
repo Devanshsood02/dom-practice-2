@@ -17,13 +17,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+main h1 {
+  color: white;
+  font-size: 45px;
 }
 main section.wraper {
   display: flex;
   flex-direction: column;
   background-color: #E0C533;
+  margin: 50px;
+  height: 300px;
 }
-main section.wraper h5 {
+main section.wraper h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,19 +43,24 @@ main section.wraper section.view1 {
   width: 400px;
   height: 250px;
 }
+main section.wraper section.view1 span {
+  font-size: 15px;
+  font-weight: 550;
+  color: white;
+}
 main section.wraper section.view1 .left {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-items: center;
-  height: 150px;
-  width: 120px;
+  height: 180px;
+  width: 165px;
   background-color: #FF8B71;
   justify-content: space-evenly;
 }
 main section.wraper section.view1 .left img {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
 }
 main section.wraper section.view1 .right {
   display: flex;
@@ -56,17 +68,27 @@ main section.wraper section.view1 .right {
   align-items: center;
   align-items: center;
   justify-content: space-evenly;
-  height: 150px;
-  width: 120px;
+  height: 180px;
+  width: 165px;
   background-color: #87E089;
 }
 main section.wraper section.view1 .right img {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
 }
 main button {
   display: flex;
   flex-direction: column;
+  color: black;
+  background-color: white;
+  padding: 10px 35px;
+  border: 3px solid red;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main button:hover {
+  scale: 1.1;
   color: white;
   background-color: red;
 }/*# sourceMappingURL=style.css.map */
